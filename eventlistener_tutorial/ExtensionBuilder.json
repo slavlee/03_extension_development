@@ -1,0 +1,52 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "This is a tutorial extension to illustrate PSR-14 events",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 11.5.0-11.5.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "generateDocumentationTemplate": false,
+            "generateEditorConfig": false,
+            "generateEmptyGitRepository": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "11.5.0-11.5.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "eventlistener_tutorial",
+        "name": "T3 Campus Event Listener Example",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "Slavlee",
+                "email": "youtube@slavlee.de",
+                "name": "Kevin Chileong Lee",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Helloworld => show",
+                    "noncacheableActions": "Helloworld => show"
+                },
+                "description": "Simple Hello World Plugin",
+                "key": "helloworld",
+                "name": "Hello World"
+            }
+        ],
+        "vendorName": "Slavlee"
+    },
+    "wires": [],
+    "storagePath": "\/usr\/www\/users\/typoppc\/subdomains\/coaching\/typo3_campus\/youtube\/1\/typo3conf\/ext\/",
+    "log": {
+        "last_modified": "2022-09-04 09:40",
+        "extension_builder_version": "11.0.1",
+        "be_user": " (1)"
+    }
+}

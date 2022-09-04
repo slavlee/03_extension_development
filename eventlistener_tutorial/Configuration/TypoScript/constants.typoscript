@@ -1,0 +1,14 @@
+plugin.tx_eventlistenertutorial_helloworld {
+    view {
+        # cat=plugin.tx_eventlistenertutorial_helloworld/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:eventlistener_tutorial/Resources/Private/Templates/
+        # cat=plugin.tx_eventlistenertutorial_helloworld/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:eventlistener_tutorial/Resources/Private/Partials/
+        # cat=plugin.tx_eventlistenertutorial_helloworld/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:eventlistener_tutorial/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_eventlistenertutorial_helloworld//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}
