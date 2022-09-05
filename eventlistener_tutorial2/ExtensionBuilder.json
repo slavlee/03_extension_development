@@ -1,0 +1,42 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "A second extension to illustrate PSR-14 events.",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 11.5.0-11.5.99\neventlistener_tutorial => 1.0.0\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "generateDocumentationTemplate": false,
+            "generateEditorConfig": false,
+            "generateEmptyGitRepository": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "11.5.0-11.5.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "eventlistener_tutorial2",
+        "name": "Eventlistener Tutorial 2",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "Slavlee",
+                "email": "youtube@slavlee.de",
+                "name": "Kevin Chileong Lee",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "Slavlee"
+    },
+    "wires": [],
+    "storagePath": "\/usr\/www\/users\/typoppc\/subdomains\/coaching\/typo3_campus\/youtube\/1\/typo3conf\/ext\/",
+    "log": {
+        "last_modified": "2022-09-05 03:43",
+        "extension_builder_version": "11.0.1",
+        "be_user": " (1)"
+    }
+}
