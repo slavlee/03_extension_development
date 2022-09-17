@@ -10,7 +10,7 @@ final class HelloworldListener {
      * @return HelloworldControllerShowActionEvent
      */
     public function __invoke(HelloworldControllerShowActionEvent $event): HelloworldControllerShowActionEvent {
-        $event->title .= ' (CHANGED THROUGH EVENT LISTENER 2)';
+        $event->title = 'Hallo';
         $event->message .= ' (CHANGED THROUGH EVENT LISTENER 2)';
         
         return $event;

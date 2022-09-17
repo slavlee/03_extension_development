@@ -5,6 +5,7 @@ namespace Slavlee\EventlistenerTutorial\Controller;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use Psr\Http\Message\ResponseInterface;
 use Slavlee\EventlistenerTutorial\Event\HelloworldControllerShowActionEvent;
+use Slavlee\EventlistenerTutorial\Event\HelloworldControllerShowActionAdditionalInfoEvent;
 
 class HelloworldController extends ActionController {
     /**
@@ -25,8 +26,13 @@ class HelloworldController extends ActionController {
             $message = $newData->message;
         }
 
+        $additionalInfoEvent = $this->eventDispatcher->dispatch(
+            new HelloworldControllerShowActionAdditionalInfoEvent()
+        );
+
         $this->view->assign('title', $title);
         $this->view->assign('message', $message);
+        $this->view->assign('additionalInfo', $additionalInfoEvent->additionalInfo);
 
         return $this->htmlResponse();
     }

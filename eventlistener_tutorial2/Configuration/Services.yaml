@@ -10,3 +10,9 @@ services:
          - name: event.listener
            identifier: 'HelloworldControllerShowAction'
            event: Slavlee\EventlistenerTutorial\Event\HelloworldControllerShowActionEvent
+
+  Slavlee\EventlistenerTutorial2\EventListener\HelloworldAdditionalInfoListener:
+      tags:
+         - name: event.listener
+           identifier: 'HelloworldControllerShowAdditionalInfoAction'
+           event: Slavlee\EventlistenerTutorial\Event\HelloworldControllerShowActionAdditionalInfoEvent         
